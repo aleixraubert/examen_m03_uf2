@@ -55,6 +55,17 @@
 
         public static int OptionC()
         {
+            const string Msg_Welcome = "Introdueix el rang de valors aleatoris, per a retornar-ne un:";
+        
+            Console.WriteLine(Msg_Welcome);
+        
+            int min = Convert.ToInt32(Console.ReadLine());
+        
+            int max = Convert.ToInt32(Console.ReadLine());
+        
+            Random rnd = new Random();
+        
+            return rnd.Next(min, max);
         }
 
         public static void OptionD()
